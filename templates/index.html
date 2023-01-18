@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+   <title>Syllabus Explorer</title>
+</head>
+<body>  
+	<div>
+		<h1>Welcome, {{ user.name }}</h1>
+	</div>
+	<div>
+		<h1>My Syllabi</h1>
+		{% for s in syllabi %}
+			<a href="/syllabus/{{ s.id }}">{{ s.course_name }}</a>
+		{% endfor %}
+	</div>
+</body>
