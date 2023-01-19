@@ -1,0 +1,44 @@
+.eventBlock {
+    display: table;
+    width: 50%;
+    padding: 16px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* https://www.w3docs.com/snippets/html/how-to-create-a-table-with-a-fixed-header-and-scrollable-body.html */
+.tableFixHead {
+    overflow-y: scroll; /* make the table scrollable if height is more than 200 px  */
+    height: 200px; /* gives an initial height of 200px to the table */
+}
+.tableFixHead1 {
+    overflow-y: scroll; /* make the table scrollable if height is more than 200 px  */
+    height: 400px; /* gives an initial height of 200px to the table */
+}
+.tableFixHead thead th {
+    position: sticky; /* make the table heads sticky */
+    top: 0px; /* table head will be placed from the top of the table and sticks to it */
+}
+.tableFixHead1 thead th {
+    position: sticky; /* make the table heads sticky */
+    top: 0px; /* table head will be placed from the top of the table and sticks to it */
+}
+table {
+    border-collapse: collapse; /* make the table borders collapse to each other */
+    text-align: left;
+}
+th,td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    width: 30%
+}
+th {
+    background: #eee;
+}
+h1, h2 {
+    text-align: center;
+}
+ul{
+    display: table;
+    margin: 0 auto;
+}

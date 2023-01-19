@@ -10,7 +10,7 @@ import time
 import sys
 from converter import createICSFile, createCalendar
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 sys.path.append('.') # so we can import api below
 from api import get_user as _get_user, get_syllabi as _get_syllabi, get_syllabus as _get_syllabus
@@ -35,7 +35,7 @@ get_syllabus = cached(_get_syllabus)
 
 
 def filterDate(x, d1, d2):
-    if (x['event_date'] <= d2 and x['event_date'] >= d1):
+    if (x['event_date'] < d2 and x['event_date'] > d1):
         return True
     return False
 
@@ -61,14 +61,18 @@ def syllabus_detail(syl_id):
 
     eventDates = [x['event_date'] for x in events]
 
-    lastDate = max(eventDates)
-    pastDate = min(eventDates)
-    currentDate = datetime.today()
+    lastDate = max(eventDates) + timedelta(days=1)
+    pastDate = min(eventDates) - timedelta(days=1)
+    
+    currentDate = datetime.combine(datetime.today(), datetime.min.time())
+
+    print(lastDate, pastDate, currentDate)
 
     future = list(filter(lambda x: filterDate(x, currentDate, lastDate), events))
     past = list(filter(lambda x: filterDate(x, pastDate, currentDate), events))
-
-    return render_template('syllabus.html', user=user, syllabus=syllabus, id=syl_id, currentDate=currentDate.strftime("%Y-%m-%d %H:%M:%S"), past=past, future=future, events=events)
+    today = list(filter(lambda x: filterDate(x, currentDate-timedelta(days=1), currentDate+timedelta(days=1)), events))
+    
+    return render_template('syllabus.html', user=user, syllabus=syllabus, id=syl_id, currentDate=currentDate.strftime("%Y-%m-%d"), past=past, future=future, today=today, events=events)
 
 
 @app.route('/download/<syl_id>')

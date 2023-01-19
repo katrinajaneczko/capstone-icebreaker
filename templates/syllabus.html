@@ -1,83 +1,99 @@
 <!DOCTYPE html>
 <head>
    <title>Syllabus Explorer</title>
-
-   <!-- https://www.w3docs.com/snippets/html/how-to-create-a-table-with-a-fixed-header-and-scrollable-body.html -->
-   <style>
-	.tableFixHead {
-	  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
-	  height: 200px; /* gives an initial height of 200px to the table */
-	}
-	.tableFixHead thead th {
-	  position: sticky; /* make the table heads sticky */
-	  top: 0px; /* table head will be placed from the top of the table and sticks to it */
-	}
-	table {
-	  border-collapse: collapse; /* make the table borders collapse to each other */
-	  width: 100%;
-	}
-	th,
-	td {
-	  padding: 8px 16px;
-	  border: 1px solid #ccc;
-	}
-	th {
-	  background: #eee;
-	}
-  </style>
+   <link rel= "stylesheet" type= "text/css" href="{{ url_for('static',filename='syllabus.css')}}">
 </head>
 <body>  
-	
 	<div>
 		<h1>Welcome, {{ user.name }}</h1>
-	</div>
-	<a href="{{url_for('download_ics',syl_id=id)}}"
-		   class="button">Download ICS</a>
-	<div>
-		<a href="https://calendar.google.com/calendar/u/0/r/settings/export" target="_blank" >Google Calendar</a>
-	</div>
-	<div>
-		<a href="https://outlook.office365.com/calendar/addcalendar" target="_blank" >Outlook Calendar</a>
-	</div>
-	<div>
 		<h2>Today's Date: {{currentDate}}</h2>
+	</div>
+	
+	<div>
+		<ul>
+			<li><a href="{{url_for('download_ics',syl_id=id)}}" class="button">Download ICS</a></li>
+			<li><a href="https://www.google.com/calendar"> Google Calendar</a></li>
+			<li><a href="{{url_for('index')}}" class="button">Go Back</a></li>
+		</ul>
+	</div>
 
-		<h3>PAST EVENTS</h3>
-		<div class="tableFixHead">
-			<table>
-				<tr>
+	<div>
+		<div class="eventBlock">
+			<h2>TODAY'S EVENTS</h2>
+			<div class="tableFixHead">
+				<table>
+					<thead>
+						<tr>
+							<th>Event</th>
+							<th>Event Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					{% for item in today %}
+						<tr>
+							<td>{{item.event_name}} [{{item.class_type}}] </td>
+							<td>{{item.event_description}}</td>
+						</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="eventBlock">
+			<h2>PAST EVENTS</h2>
+			<div class="tableFixHead{{'1' if past|length>2}}">
+				<table>
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Event</th>
+							<th>Event Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					{% for item in past %}
+						<tr>
+							<td>{{item.event_date}}</td>
+							<td>{{item.event_name}} [{{item.class_type}}] </td>
+							<td>{{item.event_description}}</td>
+						</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="eventBlock">
+			<h2>FUTURE EVENTS</h2>
+			<div class="tableFixHead{{'1' if future|length>2}}">
+				<table>
+				<thead>
+					<tr>
 					<th>Date</th>
 					<th>Event</th>
 					<th>Event Description</th>
-				</tr>
-				{% for item in past %}
-				<tr>
-					<td>{{item.event_date}}</td>
-					<td>{{item.event_name}}</td>
-					<td>{{item.event_description}}</td>
-				</tr>
-				{% endfor %}
-			</table>
+					</tr>
+				</thead>
+				<tbody>
+					{% for item in future %}
+					<tr>
+						<td>{{item.event_date}}</td>
+						<td>{{item.event_name}} [{{item.class_type}}] </td>
+						<td>{{item.event_description}}</td>
+					</tr>
+					{% endfor %}
+					
+				</tbody>
+				</table>
+			</div>
 		</div>
 		
-		<h3>FUTURE EVENTS</h3>
-		<div class="tableFixHead">
-			<table>
-				<tr>
-					<th>Date</th>
-					<th>Event</th>
-					<th>Event Description</th>
-				</tr>
-				{% for item in future %}
-				<tr>
-					<td>{{item.event_date}}</td>
-					<td>{{item.event_name}}</td>
-					<td>{{item.event_description}}</td>
-				</tr>
-				{% endfor %}
-			</table>
-		</div>
+		
 
+
+
+		
 		
 	</div>
 	
