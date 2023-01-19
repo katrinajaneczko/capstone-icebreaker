@@ -1,5 +1,7 @@
 import json
 import urllib.request as urllib
+import ssl 
+ssl._create_default_https_context = ssl._create_unverified_context
 
 """
 Functions for querying the following REST API:
