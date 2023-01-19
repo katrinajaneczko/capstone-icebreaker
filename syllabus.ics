@@ -2,303 +2,303 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:2 week sprint. Ends April 12th.
-DTSTART:20230329T000000Z
-SUMMARY:Sprint 4
-UID:cba2b0f1-c24e-4ed7-b008-6a2dfbaf722c@cba2.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We will spend more time populating the product backlog in Jira. We will also further evaluate scope and see how Gantt charts can help us to visualize time constraints in project development.
-DTSTART:20230209T000000Z
-SUMMARY:Product Backlog and Project Scope
-UID:075345af-4b16-4a4c-91e7-9ede472cb14e@0753.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 2 weeks.
-DTSTART:20230215T000000Z
-SUMMARY:Sprint Planning Meeting
-UID:81b648fe-abd8-4728-8f20-02d5bfce92a3@81b6.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Each team will conduct their stand up meeting in breakout rooms then afterwards will do a scrum of scrum essentially summarizing the teams progress with Professor Applebaum. We will also look at the project board and burn down chart to make sure that we're on track to finishing the sprint.
-DTSTART:20230419T000000Z
-SUMMARY:Stand Up Meeting
-UID:01d18e7f-0ea2-4243-b26c-f97ffed1a7c7@01d1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We will learn about project planning\, management\, and the tools we will use to help manage complex software projects Jira.
-DTSTART:20230201T000000Z
-SUMMARY:Software Project Planning and Tools
-UID:57745297-aa1b-4f3e-95d4-515b01822a41@5774.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:1 Week Practice Sprint
-DTSTART:20230208T000000Z
-SUMMARY:Sprint 0
-UID:d710b3a2-ae60-4a3d-bba6-477d5aa9d70d@d710.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:16 day sprint. Ends April 27th.
-DTSTART:20230412T000000Z
-SUMMARY:Sprint 5
-UID:71ca24b0-2a1b-472d-88d1-3b775d1bb540@71ca.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The Test Procedures document describes the approach and tests to be performed to verify the requirements specified in the Requirements Document. It includes procedures for unit tests\, which involve testing individual methods with input parameter values and expected results\, using mock objects to stub external classes. It also includes integration tests\, which demonstrate each use-case based on the use-case descriptions and sequence diagrams\, using mock objects for external input and verification. Finally\, it includes acceptance tests\, which demonstrate all functional and non-functional requirements through a combination of automated tests derived from use-cases and manual tests with recorded observations of the results.
-DTSTART:20230305T000000Z
-SUMMARY:Test Procedures Document
-UID:b2e5aa72-7ff1-46cc-b2b8-30a888eb6868@b2e5.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We've already learned about Unit Testing in Software Design\, but there is so much more out there. we will learn about software quality control feature testing. Continuous integration and deployment. We will also talk about how to write good manual acceptance test criteria.
-DTSTART:20230228T000000Z
-SUMMARY:Testing. 123. Testing.
-UID:2d306275-eae7-4d7c-8de2-12751008c13e@2d30.org
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:The Final Software Release should contain ALL source code and documents along with a User Manual that describes how to use and maintain the system\, and can be presented as two documents\, one for the end-user and the other for the maintainer. It includes a quick start guide for experienced users\, installation instructions\, configuration details\, information on passwords and security\, instructions for installing and maintaining the database if required\, a description of the application's functions and operating procedures\, information on backup and recovery procedures\, descriptions of error messages and their corresponding corrective actions\, troubleshooting guidelines specific to the application\, and information on support contacts and contracts.
 DTSTART:20230507T000000Z
 SUMMARY:Final Software Release
-UID:7cfb007f-7ad4-426b-b285-9a37543f37ac@7cfb.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We will learn how to pitch an enticing project idea.
-DTSTART:20230118T000000Z
-SUMMARY:How to pitch an idea
-UID:352f27d8-6217-410b-9730-f1f9e2443719@352f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The Design Document (Architecture) describes the software architecture and how the requirements are mapped into the design. It includes a description of the different components and their interfaces\, class diagrams showing the classes to be developed and their relationships\, sequence diagrams showing the message flow for each use-case\, state diagrams for classes with states\, and algorithms employed in the project. If the project includes a database\, it should also include an entity-relation diagram and table design. The document will combine text and diagrams to explain the design.
-DTSTART:20230219T000000Z
-SUMMARY:Design Document Part 1 (Architecture)
-UID:94902c4b-ff29-4c79-8971-315a43158414@9490.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The Design Document (API) provides a complete design of the software implementation\, including a review of the software architecture for each module specified in the Design Document (Architecture). It includes information about each class\, including data fields\, methods\, and their purposes\, as well as pre-conditions\, post-conditions\, parameters and data types\, return values\, and output variables. This information should be provided in structured comments in the source files\, and a documentation generation tool should be used to generate the document.
-DTSTART:20230226T000000Z
-SUMMARY:Design Document Part 2 (API)
-UID:c7032485-8403-4f34-ae93-d075cbd4ef44@c703.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Students will vote on the projects they want to work on.
-DTSTART:20230125T000000Z
-SUMMARY:Project Voting Survey
-UID:ab851747-44ab-4b2c-8137-64dc564c8326@ab85.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:First day of class we'll get to know each other with a small "hackathon" activity
-DTSTART:20230117T000000Z
-SUMMARY:Syllabus/Ice Breaker
-UID:424efffe-4274-4cd5-bb83-8cd5242467da@424e.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The Requirements Specification is a design document that outlines the functional and non-functional requirements for a project. It serves as a contract between the project team and stakeholders and will be used to measure the project's success or failure. The specification should include an overview of the system and its block diagram\, a general overview of the document\, a list of general requirements\, a description of features and requirements\, and use-case or user story descriptions with triggering events and interactions between the actor and the system. Normal and alternate flows should also be described\, and external interfaces with the user and external hardware or software should be identified.
-DTSTART:20230205T000000Z
-SUMMARY:Requirements Specification
-UID:1518f787-e25f-4012-a033-c6a024282e84@1518.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We will cover the design patterns\, employed by most applications\, such as MVC we will also take a look at RESTful\, architectures and example documentation on the web.
-DTSTART:20230221T000000Z
-SUMMARY:API Interface Design
-UID:5e1f8abb-7ed7-4cbd-919f-5161120ad0ca@5e1f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:If you do not include spring break in this sprint you have 7 days to prepare for milestone demo 1. This is not ideal but the reality. Working during break is optional\, but I'd strongly recommend it.***
-DTSTART:20230301T000000Z
-SUMMARY:Sprint 2
-UID:bdf131b2-c9c0-4412-909d-6316549036a4@bdf1.org
+UID:bd200aa2-82a5-4b9e-bc24-ff289c75a8e7@bd20.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:The Software Development Plan outlines the activities and tasks to be performed to develop a software product. It includes a list of activities\, such as requirements gathering and testing\, and tasks with predecessor and successor tasks\, estimated effort\, and responsible individuals. It also includes a schedule in the form of a Gantt chart and a description of the development environment\, including the hardware and software to be used. The plan should also outline the version control tool and procedures to be used to maintain a defined main branch of the project.
 DTSTART:20230212T000000Z
 SUMMARY:Software Development Plan
-UID:6bd6ab1f-4ae0-4403-bbea-44fe371faebf@6bd6.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The Test Report documents the results of tests that have been run. It includes output from unit\, integration\, and automated acceptance tests\, as well as a copy of the manual acceptance test procedures with notations indicating that the tests were performed and the observed results. It also includes a list of known problems\, including a description of each failed test.
-DTSTART:20230506T000000Z
-SUMMARY:Test Report Document
-UID:ffd1c6f9-f1b6-4ed7-865a-cc8f522153d3@ffd1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Now that we're in our second sprint\, we've probably faced some issues in development that has stopped the progress of some other important aspect of the project. We are going to identify what is a blocker and what can be split up to make these more manageable.
-DTSTART:20230302T000000Z
-SUMMARY:Acceptance criteria\, and managing blockers
-UID:9a7438a3-18a5-4678-a0e3-4970197f1dc5@9a74.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Now that we've seen the individual project pitches\, we'll make time to interview potential teammates and ask questions.
-DTSTART:20230125T000000Z
-SUMMARY:Team formation
-UID:e2557b1d-25f2-4034-b7c8-585b1363c6b7@e255.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Each team will conduct their stand up meeting in breakout rooms then afterwards will do a scrum of scrum essentially summarizing the teams progress with Professor Applebaum. We will also look at the project board and burn down chart to make sure that we're on track to finishing the sprint.
-DTSTART:20230405T000000Z
-SUMMARY:Stand Up Meeting
-UID:6d5178d9-21f5-4638-8733-239681252a24@6d51.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 2 weeks (if including spring break\, 1 week if not).
-DTSTART:20230301T000000Z
-SUMMARY:Sprint Planning Meeting ***note Spring Break***
-UID:de70d2c3-b914-43d5-b394-42d33bf112f6@de70.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Each team will conduct their stand up meeting in breakout rooms then afterwards will do a scrum of scrum essentially summarizing the teams progress with Professor Applebaum. We will also look at the project board and burn down chart to make sure that we're on track to finishing the sprint.
-DTSTART:20230322T000000Z
-SUMMARY:Stand Up Meeting
-UID:f01c4e19-bf17-4715-bed0-b39029fd9341@f01c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:It's the big day! Faculty\, Students\, and specially appointed industry guests will get the chance to see your work all finalized.
-DTSTART:20230427T000000Z
-SUMMARY:Final Presentation & Demo
-UID:0d96a647-953e-4de2-b8dd-9a11aefe71d5@0d96.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We will learn what tools are out there for building great capstone projects. We will also talk about what solving problems and avoiding picking technology for technology sake.
-DTSTART:20230119T000000Z
-SUMMARY:Project Brainstorming
-UID:a5101c2c-3450-421d-81ae-7835a4618e09@a510.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:A requirements gathering workshop to help quickly identify what happens in the domain of your project. We will use the online whiteboard Miro\, and work with guest stakeholders.
-DTSTART:20230131T000000Z
-SUMMARY:Event Storming
-UID:4ca285b7-348d-4cdb-801d-ac86ca256466@4ca2.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 1 weeks.
-DTSTART:20230208T000000Z
-SUMMARY:Practice Sprint Planning
-UID:1a25df9f-452a-49f1-a6b0-fc6f147eccf3@1a25.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 2 weeks.
-DTSTART:20230412T000000Z
-SUMMARY:Sprint Planning Meeting
-UID:0650cabb-7194-40e3-9787-88eeed27bc3d@0650.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
-DTSTART:20230411T000000Z
-SUMMARY:Milestone Demo 3
-UID:b421ae08-2cc5-4e45-aa09-aaf685ab8d38@b421.org
+UID:83e39ee6-75b9-490d-b752-2ed6c4b9fb4e@83e3.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 2 weeks.
 DTSTART:20230329T000000Z
 SUMMARY:Sprint Planning Meeting
-UID:6189cc82-0da3-467d-a5b2-f72acecd52ed@6189.org
+UID:b66a1dcc-da73-42e8-96cf-e46b72c76a87@b66a.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
-DTSTART:20230314T000000Z
-SUMMARY:Milestone Demo 1
-UID:bc208c4e-30eb-4e4a-ba80-abd6d5085aa7@bc20.org
+DESCRIPTION:We will learn about project planning\, management\, and the tools we will use to help manage complex software projects Jira.
+DTSTART:20230201T000000Z
+SUMMARY:Software Project Planning and Tools
+UID:ff1a3757-0ca4-40ae-bbf5-be52a2958ec6@ff1a.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Have a great summer! See you at graduation!
-DTSTART:20230512T000000Z
-SUMMARY:Final Grade Submissions 🎓
-UID:e920dd5c-55b3-4700-b4ca-3cd1d7701609@e920.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Each project team will submit a recorded group project presentation. Your presentation slides should cover the following topics resulting from the System Overview section of your project Requirements Document: System Block Diagram (focus on functions of each block\, interface between blocks and data flow)\, and User stories (show step-by-step sequence of actions)\, Features and Requirements (requirements should be measurable and verifiable). Your video should be 10 -15 min. Q/A may be held during lecture.
-DTSTART:20230129T000000Z
-SUMMARY:Group Project Presentation Video Recording
-UID:148bc7dc-d8cc-447e-bf3a-c1e9b7484d23@148b.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We will take a look at real world examples of API documentation. There's tons of it out there. We will also discuss what we like about the documentation and what could be better and how we can apply that to our design document.
-DTSTART:20230223T000000Z
-SUMMARY:API docs by example
-UID:3e2241ed-83dd-4db9-9ae0-983bc073b7eb@3e22.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Monday\, March 6 - Sunday\, March 12 is Spring Break!
-DTSTART:20230306T000000Z
-SUMMARY:Spring Break (no classes held)
-UID:e65d399c-a37b-456e-8faa-c24f8f141ada@e65d.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:We will be heavily using Docusaurus throughout the semester for publishing project documentation. We will get into our project teams and use the class Lab time to document a mock project. Reviewing class diagrams\, sequence diagrams\, and use case diagrams.
-DTSTART:20230126T000000Z
-SUMMARY:Docusaurus Activity
-UID:753f4aaf-7c1c-4752-b807-74565881fe8d@753f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
-DTSTART:20230328T000000Z
-SUMMARY:Milestone Demo 2
-UID:cda1d57b-75e0-4972-be9f-ad07e4b5201e@cda1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Each team will conduct their stand up meeting in breakout rooms then afterwards will do a scrum of scrum essentially summarizing the teams progress with Professor Applebaum. We will also look at the project board and burn down chart to make sure that we're on track to finishing the sprint.
-DTSTART:20230222T000000Z
-SUMMARY:Stand Up Meeting
-UID:be1aa632-6de5-487b-8ee7-685fd22c705c@be1a.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TA Kyle will administor a mock Story Point Poker exercise using Jira and Miro as a class. This method is used heavily in industry to estimate how much effort an agile team must take to achieve their sprint goal.
-DTSTART:20230207T000000Z
-SUMMARY:Agile Estimation Activity
-UID:61e2b895-7fef-4fad-8b04-58172c8472e1@61e2.org
+DESCRIPTION:We will learn how to pitch an enticing project idea.
+DTSTART:20230118T000000Z
+SUMMARY:How to pitch an idea
+UID:1f533fa6-cf60-42e4-b65f-024fe13b7b40@1f53.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:We will review the unified modeling language diagrams from software design class.  We will also talk about the audience that would read design document 1 and it's purpose.
 DTSTART:20230214T000000Z
 SUMMARY:UML Discussion and Software Design Activity
-UID:9f5bf7c1-78ab-429b-a7be-5cee5f8d6385@9f5b.org
+UID:fa473d6d-2c32-4ae4-a095-834e5c77256a@fa47.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Monday\, March 6 - Sunday\, March 12 is Spring Break!
+DTSTART:20230306T000000Z
+SUMMARY:Spring Break (no classes held)
+UID:c3c4d61f-74b0-486a-8435-c9817cadf43a@c3c4.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:1 Week Practice Sprint
+DTSTART:20230208T000000Z
+SUMMARY:Sprint 0
+UID:037da26a-02a7-41ea-b23c-77a48760b4b8@037d.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
+DTSTART:20230411T000000Z
+SUMMARY:Milestone Demo 3
+UID:c4028d67-0aba-47c5-b230-e569c080d04d@c402.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Now that we've seen the individual project pitches\, we'll make time to interview potential teammates and ask questions.
+DTSTART:20230125T000000Z
+SUMMARY:Team formation
+UID:57fd1492-c5ab-4e34-a68f-686964e183eb@57fd.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:First day of class we'll get to know each other with a small "hackathon" activity
+DTSTART:20230117T000000Z
+SUMMARY:Syllabus/Ice Breaker
+UID:2e6e0364-ae51-4eec-a682-50a994bfd77a@2e6e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will be heavily using Docusaurus throughout the semester for publishing project documentation. We will get into our project teams and use the class Lab time to document a mock project. Reviewing class diagrams\, sequence diagrams\, and use case diagrams.
+DTSTART:20230126T000000Z
+SUMMARY:Docusaurus Activity
+UID:b8b6b0e6-1c13-4f27-b9b0-523617a1aa18@b8b6.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 2 weeks.
 DTSTART:20230315T000000Z
 SUMMARY:Sprint Planning Meeting
-UID:b1b6611c-1211-452e-8921-258f185d4d8b@b1b6.org
+UID:cd8838ed-4ee0-4bcb-b491-ccad75a9f120@cd88.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:We will work on drawing System Block Diagrams\, and review Use Case Diagrams.
-DTSTART:20230202T000000Z
-SUMMARY:System Block Diagram and Use Cases
-UID:adb33bfa-420d-4a50-b7b7-154802eae144@adb3.org
+DESCRIPTION:The Design Document (API) provides a complete design of the software implementation\, including a review of the software architecture for each module specified in the Design Document (Architecture). It includes information about each class\, including data fields\, methods\, and their purposes\, as well as pre-conditions\, post-conditions\, parameters and data types\, return values\, and output variables. This information should be provided in structured comments in the source files\, and a documentation generation tool should be used to generate the document.
+DTSTART:20230226T000000Z
+SUMMARY:Design Document Part 2 (API)
+UID:771d14ea-c4dd-43c3-8a13-197c71b2f0df@771d.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:A requirements gathering workshop to help quickly identify what happens in the domain of your project. We will use the online whiteboard Miro\, and work with guest stakeholders.
+DTSTART:20230131T000000Z
+SUMMARY:Event Storming
+UID:90e53258-9696-4f10-90c1-04bdd8c96abc@90e5.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:TA Kyle will administor a mock Story Point Poker exercise using Jira and Miro as a class. This method is used heavily in industry to estimate how much effort an agile team must take to achieve their sprint goal.
+DTSTART:20230207T000000Z
+SUMMARY:Agile Estimation Activity
+UID:500c9d2e-ba4d-4709-aef3-420eca579f21@500c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Now that we're in our second sprint\, we've probably faced some issues in development that has stopped the progress of some other important aspect of the project. We are going to identify what is a blocker and what can be split up to make these more manageable.
+DTSTART:20230302T000000Z
+SUMMARY:Acceptance criteria\, and managing blockers
+UID:8fd02757-6e19-489d-9106-9a997fb57450@8fd0.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:2 week sprint. Ends March 29th.
 DTSTART:20230315T000000Z
 SUMMARY:Sprint 3
-UID:a8acab17-577f-462e-b0be-337ce6e6fd68@a8ac.org
+UID:a7953fb7-556f-4c52-8b38-e2cba99f9d97@a795.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Depending on the needs of the classroom\, this lab is to be determined.
-DTSTART:20230216T000000Z
-SUMMARY:Choose your own adventure Design Document 1 prep
-UID:3b3d4df4-3b71-420b-abc0-41515bbcc4b1@3b3d.org
+DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 2 weeks (if including spring break\, 1 week if not).
+DTSTART:20230301T000000Z
+SUMMARY:Sprint Planning Meeting ***note Spring Break***
+UID:c78e220e-6b1d-4af0-9826-db3f82ea52bd@c78e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 2 weeks.
+DTSTART:20230412T000000Z
+SUMMARY:Sprint Planning Meeting
+UID:a150ac33-bbaf-4fec-8ee9-7db3393b56d8@a150.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The Test Report documents the results of tests that have been run. It includes output from unit\, integration\, and automated acceptance tests\, as well as a copy of the manual acceptance test procedures with notations indicating that the tests were performed and the observed results. It also includes a list of known problems\, including a description of each failed test.
+DTSTART:20230506T000000Z
+SUMMARY:Test Report Document
+UID:67a67cfb-8fe7-457c-89b5-018b1a006f89@67a6.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will work on drawing System Block Diagrams\, and review Use Case Diagrams.
+DTSTART:20230202T000000Z
+SUMMARY:System Block Diagram and Use Cases
+UID:42a5d978-0db0-4401-9817-b91536fa4283@42a5.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 2 weeks.
+DTSTART:20230215T000000Z
+SUMMARY:Sprint Planning Meeting
+UID:c0449985-419d-4c52-abeb-d923f477e6df@c044.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:All students will pitch their projects.
 DTSTART:20230124T000000Z
 SUMMARY:Individual elevator pitch
-UID:7fe46ee9-1463-4032-844a-cc975a7b765c@7fe4.org
+UID:7a987408-9181-4fb3-a42f-efcfe22d55ba@7a98.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:The Project Proposal provides an overview of a project's goals and describes its top-level requirements\, conceptual design\, and comparison to similar products. It should include a project abstract that is at least half a page long and should not contain personal statements about the project's development. The proposal should also include a description of the project's background and a list of required resources for its development. The project abstract will be featured on the project's development webpage and repeated as the introduction to all other project documents. An optional project logo should not be more than 32 pixels high and 128 pixels wide. Proper citation of sources is required in the background section. If non-standard resources are needed\, they must be identified and discussed with the instructor.
-DTSTART:20230124T000000Z
-SUMMARY:Individual Project Proposal
-UID:99b27357-f1ae-42f7-874c-089b0a291a80@99b2.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:First 2 week sprint. Ends March 1st.
-DTSTART:20230215T000000Z
-SUMMARY:Sprint 1
-UID:52c252f5-584d-40db-a0c8-81ea602a2ead@52c2.org
+DESCRIPTION:It's the big day! Faculty\, Students\, and specially appointed industry guests will get the chance to see your work all finalized.
+DTSTART:20230427T000000Z
+SUMMARY:Final Presentation & Demo
+UID:fc33f174-7adc-4038-bbea-b2fa7ea33b35@fc33.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:This is a group revision of the approved project.
 DTSTART:20230131T000000Z
 SUMMARY:Group Project Proposal
-UID:49e0ddef-0e5f-4c8c-8f0d-ec261babcde5@49e0.org
+UID:1aebe409-9850-46d3-aa88-4179025c8295@1aeb.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The Requirements Specification is a design document that outlines the functional and non-functional requirements for a project. It serves as a contract between the project team and stakeholders and will be used to measure the project's success or failure. The specification should include an overview of the system and its block diagram\, a general overview of the document\, a list of general requirements\, a description of features and requirements\, and use-case or user story descriptions with triggering events and interactions between the actor and the system. Normal and alternate flows should also be described\, and external interfaces with the user and external hardware or software should be identified.
+DTSTART:20230205T000000Z
+SUMMARY:Requirements Specification
+UID:b45708e5-8a03-416e-808f-73db05a64f8c@b457.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will cover the design patterns\, employed by most applications\, such as MVC we will also take a look at RESTful\, architectures and example documentation on the web.
+DTSTART:20230221T000000Z
+SUMMARY:API Interface Design
+UID:923955f6-ef7e-4790-b678-059e0099efef@9239.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We've already learned about Unit Testing in Software Design\, but there is so much more out there. we will learn about software quality control feature testing. Continuous integration and deployment. We will also talk about how to write good manual acceptance test criteria.
+DTSTART:20230228T000000Z
+SUMMARY:Testing. 123. Testing.
+UID:0b3b1602-e710-40a0-9393-104b2d16867e@0b3b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will spend more time populating the product backlog in Jira. We will also further evaluate scope and see how Gantt charts can help us to visualize time constraints in project development.
+DTSTART:20230209T000000Z
+SUMMARY:Product Backlog and Project Scope
+UID:4ed89caa-e65d-418d-a7bf-78e02183c424@4ed8.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The Test Procedures document describes the approach and tests to be performed to verify the requirements specified in the Requirements Document. It includes procedures for unit tests\, which involve testing individual methods with input parameter values and expected results\, using mock objects to stub external classes. It also includes integration tests\, which demonstrate each use-case based on the use-case descriptions and sequence diagrams\, using mock objects for external input and verification. Finally\, it includes acceptance tests\, which demonstrate all functional and non-functional requirements through a combination of automated tests derived from use-cases and manual tests with recorded observations of the results.
+DTSTART:20230305T000000Z
+SUMMARY:Test Procedures Document
+UID:d4e0cc58-430e-40fb-bf79-253b8053fbbd@d4e0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Students will vote on the projects they want to work on.
+DTSTART:20230125T000000Z
+SUMMARY:Project Voting Survey
+UID:7a9cb9ee-b774-412b-8ae7-5b707bab17ec@7a9c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Depending on the needs of the classroom\, this lab is to be determined.
+DTSTART:20230216T000000Z
+SUMMARY:Choose your own adventure Design Document 1 prep
+UID:c5db361b-ff72-4477-bea4-eeb4ee882be0@c5db.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Each team will conduct their stand up meeting in breakout rooms then afterwards will do a scrum of scrum essentially summarizing the teams progress with Professor Applebaum. We will also look at the project board and burn down chart to make sure that we're on track to finishing the sprint.
+DTSTART:20230222T000000Z
+SUMMARY:Stand Up Meeting
+UID:3f923e34-e551-4d22-be4c-bcb0d7a4712c@3f92.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:First 2 week sprint. Ends March 1st.
+DTSTART:20230215T000000Z
+SUMMARY:Sprint 1
+UID:adc07a34-4ac6-452f-96ca-1c0db0c951fd@adc0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:2 week sprint. Ends April 12th.
+DTSTART:20230329T000000Z
+SUMMARY:Sprint 4
+UID:8f3ecfee-8566-4a58-be00-a724e6b98d9b@8f3e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Have a great summer! See you at graduation!
+DTSTART:20230512T000000Z
+SUMMARY:Final Grade Submissions 🎓
+UID:5121fc80-d3e9-4d7d-b4da-b0f76c6cc25a@5121.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The Design Document (Architecture) describes the software architecture and how the requirements are mapped into the design. It includes a description of the different components and their interfaces\, class diagrams showing the classes to be developed and their relationships\, sequence diagrams showing the message flow for each use-case\, state diagrams for classes with states\, and algorithms employed in the project. If the project includes a database\, it should also include an entity-relation diagram and table design. The document will combine text and diagrams to explain the design.
+DTSTART:20230219T000000Z
+SUMMARY:Design Document Part 1 (Architecture)
+UID:ce19fcf7-4eff-48b7-8991-ae7ab43df461@ce19.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Each team will conduct their stand up meeting in breakout rooms then afterwards will do a scrum of scrum essentially summarizing the teams progress with Professor Applebaum. We will also look at the project board and burn down chart to make sure that we're on track to finishing the sprint.
+DTSTART:20230419T000000Z
+SUMMARY:Stand Up Meeting
+UID:1428c2ef-f243-47e5-b3ff-cb308ddca127@1428.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will take a look at real world examples of API documentation. There's tons of it out there. We will also discuss what we like about the documentation and what could be better and how we can apply that to our design document.
+DTSTART:20230223T000000Z
+SUMMARY:API docs by example
+UID:de8d9d23-89a7-440d-aa67-d5294b6a7255@de8d.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
+DTSTART:20230314T000000Z
+SUMMARY:Milestone Demo 1
+UID:1ea60b7a-6870-4b62-b6cd-979a8e5f987b@1ea6.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The Project Proposal provides an overview of a project's goals and describes its top-level requirements\, conceptual design\, and comparison to similar products. It should include a project abstract that is at least half a page long and should not contain personal statements about the project's development. The proposal should also include a description of the project's background and a list of required resources for its development. The project abstract will be featured on the project's development webpage and repeated as the introduction to all other project documents. An optional project logo should not be more than 32 pixels high and 128 pixels wide. Proper citation of sources is required in the background section. If non-standard resources are needed\, they must be identified and discussed with the instructor.
+DTSTART:20230124T000000Z
+SUMMARY:Individual Project Proposal
+UID:ef49b785-c449-4849-977e-9a05b563f552@ef49.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Each team will conduct their stand up meeting in breakout rooms then afterwards will do a scrum of scrum essentially summarizing the teams progress with Professor Applebaum. We will also look at the project board and burn down chart to make sure that we're on track to finishing the sprint.
+DTSTART:20230405T000000Z
+SUMMARY:Stand Up Meeting
+UID:dc93921b-1883-4ffe-b6ab-7cef57d8d0ee@dc93.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:You will be expected to populate your product backlog in Jira organized by Epics and priority. You will also be expected to have a written sprint goal for the team populating your first sprint backlog based on the sprint goal. Everyone on the team should have at least one Jira ticket assigned to them\, the ticket should be estimated\, and it should be completable within 1 weeks.
+DTSTART:20230208T000000Z
+SUMMARY:Practice Sprint Planning
+UID:0d4e5dd4-d141-4576-96f4-ce00c7b850d7@0d4e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will learn what tools are out there for building great capstone projects. We will also talk about what solving problems and avoiding picking technology for technology sake.
+DTSTART:20230119T000000Z
+SUMMARY:Project Brainstorming
+UID:10afbe41-74e1-4f09-b649-307d6ab140b7@10af.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:16 day sprint. Ends April 27th.
+DTSTART:20230412T000000Z
+SUMMARY:Sprint 5
+UID:b7c0995e-1706-45bf-b4b3-ff62e7f0a645@b7c0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
+DTSTART:20230328T000000Z
+SUMMARY:Milestone Demo 2
+UID:e95e3ab5-0d89-45da-a1f7-c40907de5e7f@e95e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:If you do not include spring break in this sprint you have 7 days to prepare for milestone demo 1. This is not ideal but the reality. Working during break is optional\, but I'd strongly recommend it.***
+DTSTART:20230301T000000Z
+SUMMARY:Sprint 2
+UID:b52e3c94-a4dc-40f9-8326-5bcfda56698e@b52e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Each project team will submit a recorded group project presentation. Your presentation slides should cover the following topics resulting from the System Overview section of your project Requirements Document: System Block Diagram (focus on functions of each block\, interface between blocks and data flow)\, and User stories (show step-by-step sequence of actions)\, Features and Requirements (requirements should be measurable and verifiable). Your video should be 10 -15 min. Q/A may be held during lecture.
+DTSTART:20230129T000000Z
+SUMMARY:Group Project Presentation Video Recording
+UID:5df17068-32da-4701-a049-a83d7fc9d5e3@5df1.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Each team will conduct their stand up meeting in breakout rooms then afterwards will do a scrum of scrum essentially summarizing the teams progress with Professor Applebaum. We will also look at the project board and burn down chart to make sure that we're on track to finishing the sprint.
+DTSTART:20230322T000000Z
+SUMMARY:Stand Up Meeting
+UID:e034c473-1ffd-4bc8-922b-7ae16a360661@e034.org
 END:VEVENT
 END:VCALENDAR

@@ -1,4 +1,4 @@
-# pip3 install flask
+# pip3 install flask ics
 
 import os
 
@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 sys.path.append('.') # so we can import api below
 from api import get_user as _get_user, get_syllabi as _get_syllabi, get_syllabus as _get_syllabus
 
-def cached(f, seconds=60):
+def cached(f, ttl=60):
     """
     decorator
     Cache function calls with a TTL
@@ -26,7 +26,7 @@ def cached(f, seconds=60):
         return f(*args, **kwargs)
 
     def _f(*args, **kwargs):
-        return expensive(*args, ttl_hash=round(time.time() / seconds), **kwargs)
+        return expensive(*args, ttl_hash=round(time.time() / ttl), **kwargs)
     return _f
 
 get_user = cached(_get_user)
@@ -40,11 +40,17 @@ def filterDate(x, d1, d2):
     return False
 
 app = Flask('syllabusapp', root_path=os.getcwd())
+
+@app.template_filter()
+def date(value, format='%Y-%m-%d'):
+    return value.strftime(format)
+
 @app.route('/')
 def index():
     _, user = get_user()
     _, syllabi = get_syllabi()
     syllabi = syllabi['syllabi']
+    print(syllabi)
     return render_template('index.html', user=user, syllabi=syllabi)
 
 @app.route('/syllabus/<syl_id>')
@@ -66,26 +72,23 @@ def syllabus_detail(syl_id):
     
     currentDate = datetime.combine(datetime.today(), datetime.min.time())
 
-    print(lastDate, pastDate, currentDate)
+    # print(lastDate, pastDate, currentDate)
 
     future = list(filter(lambda x: filterDate(x, currentDate, lastDate), events))
     past = list(filter(lambda x: filterDate(x, pastDate, currentDate), events))
     today = list(filter(lambda x: filterDate(x, currentDate-timedelta(days=1), currentDate+timedelta(days=1)), events))
     
-    return render_template('syllabus.html', user=user, syllabus=syllabus, id=syl_id, currentDate=currentDate.strftime("%Y-%m-%d"), past=past, future=future, today=today, events=events)
+    return render_template('syllabus.html', user=user, syllabus=syllabus, id=syl_id, currentDate=currentDate, past=past, future=future, today=today, events=events)
 
 
 @app.route('/download/<syl_id>')
 def download_ics(syl_id):
     _, syllabus = get_syllabus(syl_id)
     c = createCalendar(syllabus['events'])
-    createICSFile(c)
-    with open('syllabus.ics', 'r') as f:
-        ics = f.read()
-    response = make_response(ics)
-    response.headers["Content-Disposition"] = "attachment; filename=calendar{}.ics".format(syl_id)
-    response.headers["Content-Type"] = "text/calendar"
-    return response
+    return make_response((c.serialize(), 200, {
+        'Content-Disposition': 'attachment; filename=calendar{}.ics'.format(syl_id),
+        'Content-Type': 'text/calendar'
+    }))
 
 if __name__ == '__main__':
     # app.run(host='0.0.0.0', port=8000, debug=True)

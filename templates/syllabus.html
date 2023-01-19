@@ -6,15 +6,14 @@
 <body>  
 	<div>
 		<h1>Welcome, {{ user.name }}</h1>
-		<h2>Today's Date: {{currentDate}}</h2>
+		<h2>{{currentDate|date('%B %-d, %Y')}}</h2>
 	</div>
 	
 	<div>
-		<ul>
+		<ul style="list-style: none;">
 			<li><a href="{{url_for('download_ics',syl_id=id)}}" class="button">Download ICS</a></li>
 			<li><a href="https://calendar.google.com/calendar/u/0/r/settings/export" target="_blank" >Google Calendar</a></li>
 			<li><a href="https://outlook.office365.com/calendar/addcalendar" target="_blank" >Outlook Calendar</a></li>
-			<li><a href="{{url_for('index')}}" class="button">Go Back</a></li>
 		</ul>
 	</div>
 
@@ -55,7 +54,7 @@
 					<tbody>
 					{% for item in past %}
 						<tr>
-							<td>{{item.event_date}}</td>
+							<td>{{ item.event_date|date("%m/%d/%Y") }}</td>
 							<td>{{item.event_name}} [{{item.class_type}}] </td>
 							<td>{{item.event_description}}</td>
 						</tr>
@@ -79,7 +78,7 @@
 				<tbody>
 					{% for item in future %}
 					<tr>
-						<td>{{item.event_date}}</td>
+						<td>{{item.event_date|date("%m/%d/%Y")}}</td>
 						<td>{{item.event_name}} [{{item.class_type}}] </td>
 						<td>{{item.event_description}}</td>
 					</tr>
