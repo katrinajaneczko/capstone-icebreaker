@@ -8,6 +8,8 @@ from functools import lru_cache
 import time
 
 import sys
+import converter
+import api
 from converter import createICSFile, createCalendar
 
 from datetime import datetime, timedelta
@@ -42,7 +44,7 @@ def filterDate(x, d1, d2):
 app = Flask('syllabusapp', root_path=os.getcwd())
 
 @app.template_filter()
-def date(value, format='%Y-%m-%d'):
+def date(value, format="%Y-%m-%d"):
     return value.strftime(format)
 
 @app.route('/')
