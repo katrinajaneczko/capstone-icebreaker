@@ -8,7 +8,7 @@ from functools import lru_cache
 import time
 
 import sys
-import converter
+from converter import createICSFile, createCalendar
 
 from datetime import datetime
 
@@ -74,7 +74,8 @@ def syllabus_detail(syl_id):
 @app.route('/download/<syl_id>')
 def download_ics(syl_id):
     _, syllabus = get_syllabus(syl_id)
-    os.system('python3 converter.py')
+    c = createCalendar(syllabus['events'])
+    createICSFile(c)
     with open('syllabus.ics', 'r') as f:
         ics = f.read()
     response = make_response(ics)

@@ -28,13 +28,9 @@ def createICSFile(calendar):
 
 # python3 converter.py 
 if __name__ == '__main__':
-    from pprint import pprint
     from api import *
 
     syllabus = get_syllabus(1)
     events = syllabus[1]['events']
-
     c = createCalendar(events)
-    pprint(c.events)
-
     createICSFile(c)
