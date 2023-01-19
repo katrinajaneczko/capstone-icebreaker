@@ -79,7 +79,7 @@ def download_ics(syl_id):
     with open('syllabus.ics', 'r') as f:
         ics = f.read()
     response = make_response(ics)
-    response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
+    response.headers["Content-Disposition"] = "attachment; filename=calendar{}.ics".format(syl_id)
     response.headers["Content-Type"] = "text/calendar"
     return response
 
