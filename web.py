@@ -2,12 +2,13 @@
 
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, make_response
 
 from functools import lru_cache
 import time
 
 import sys
+import converter
 
 sys.path.append('.') # so we can import api below
 from api import get_user as _get_user, get_syllabi as _get_syllabi, get_syllabus as _get_syllabus
@@ -34,7 +35,7 @@ app = Flask('syllabusapp', root_path=os.getcwd())
 @app.route('/')
 def index():
     _, user = get_user()
-    _, syllabi = get_syllabi() 
+    _, syllabi = get_syllabi()
     syllabi = syllabi['syllabi']
     return render_template('index.html', user=user, syllabi=syllabi)
 
@@ -42,7 +43,18 @@ def index():
 def syllabus_detail(syl_id):
     _, syllabus = get_syllabus(syl_id)
     _, user = get_user()
-    return render_template('syllabus.html', user=user, syllabus=syllabus)
+    return render_template('syllabus.html', user=user, syllabus=syllabus, id=syl_id)
+
+@app.route('/download/<syl_id>')
+def download_ics(syl_id):
+    _, syllabus = get_syllabus(syl_id)
+    os.system('python3 converter.py')
+    with open('syllabus.ics', 'r') as f:
+        ics = f.read()
+    response = make_response(ics)
+    response.headers["Content-Disposition"] = "attachment; filename=calendar.ics"
+    response.headers["Content-Type"] = "text/calendar"
+    return response
 
 if __name__ == '__main__':
     # app.run(host='0.0.0.0', port=8000, debug=True)
