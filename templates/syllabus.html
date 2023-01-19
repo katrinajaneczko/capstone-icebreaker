@@ -31,8 +31,12 @@
 	<div>
 		<h1>Welcome, {{ user.name }}</h1>
 	</div>
+	<a href="{{url_for('download_ics',syl_id=id)}}"
+		   class="button">Download ICS</a>
 	<div>
-		
+		<a href="https://www.google.com/calendar"> Google Calendar</a>
+	</div>
+	<div>
 		<h2>Today's Date: {{currentDate}}</h2>
 
 		<h3>PAST EVENTS</h3>
@@ -71,14 +75,9 @@
 			</table>
 		</div>
 
-		<a href="{{url_for('download_ics',syl_id=id)}}"
-		   class="button">Download ICS</a>
+		
 	</div>
-	<div>
-		<a href="https://www.google.com/calendar"> Google Calendar</a>
-	</div>
-	<div>
-		{{ syllabus|pprint }}
-	</div>
+	
+
 
 </body>

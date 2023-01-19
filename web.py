@@ -56,8 +56,8 @@ def syllabus_detail(syl_id):
     events = syllabus['events']
     for event in events:        
         if(type(event['event_date']) is str):
-            datestr = str(event['event_date']+ " 00:00:00")
-            event['event_date'] = datetime.strptime(datestr, "%Y-%m-%d %H:%M:%S")
+            datestr = str(event['event_date'])
+            event['event_date'] = datetime.strptime(datestr, "%Y-%m-%d")
 
     eventDates = [x['event_date'] for x in events]
 
@@ -68,8 +68,8 @@ def syllabus_detail(syl_id):
     future = list(filter(lambda x: filterDate(x, currentDate, lastDate), events))
     past = list(filter(lambda x: filterDate(x, pastDate, currentDate), events))
 
-    return render_template('syllabus.html', user=user, syllabus=syllabus, currentDate=currentDate, past=past, future=future, events=events)
-    return render_template('syllabus.html', user=user, syllabus=syllabus, id=syl_id)
+    return render_template('syllabus.html', user=user, syllabus=syllabus, id=syl_id, currentDate=currentDate.strftime("%Y-%m-%d %H:%M:%S"), past=past, future=future, events=events)
+
 
 @app.route('/download/<syl_id>')
 def download_ics(syl_id):
