@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <head>
    <title>Syllabus Explorer</title>
+
+   <!-- https://www.w3docs.com/snippets/html/how-to-create-a-table-with-a-fixed-header-and-scrollable-body.html -->
+   <style>
+	.tableFixHead {
+	  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+	  height: 200px; /* gives an initial height of 200px to the table */
+	}
+	.tableFixHead thead th {
+	  position: sticky; /* make the table heads sticky */
+	  top: 0px; /* table head will be placed from the top of the table and sticks to it */
+	}
+	table {
+	  border-collapse: collapse; /* make the table borders collapse to each other */
+	  width: 100%;
+	}
+	th,
+	td {
+	  padding: 8px 16px;
+	  border: 1px solid #ccc;
+	}
+	th {
+	  background: #eee;
+	}
+  </style>
 </head>
 <body>  
+	
 	<div>
 		<h1>Welcome, {{ user.name }}</h1>
 	</div>
 	<div>
-		{{ syllabus|pprint }}
+		
+		<h2>Today's Date: {{currentDate}}</h2>
+
+		<h3>PAST EVENTS</h3>
+		<div class="tableFixHead">
+			<table>
+				<tr>
+					<th>Date</th>
+					<th>Event</th>
+					<th>Event Description</th>
+				</tr>
+				{% for item in past %}
+				<tr>
+					<td>{{item.event_date}}</td>
+					<td>{{item.event_name}}</td>
+					<td>{{item.event_description}}}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+		
+		<h3>FUTURE EVENTS</h3>
+		<div class="tableFixHead">
+			<table>
+				<tr>
+					<th>Date</th>
+					<th>Event</th>
+					<th>Event Description</th>
+				</tr>
+				{% for item in future %}
+				<tr>
+					<td>{{item.event_date}}</td>
+					<td>{{item.event_name}}</td>
+					<td>{{item.event_description}}}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+
 	</div>
+
 </body>
