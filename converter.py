@@ -22,7 +22,7 @@ def createICSFile(calendar):
     """
     Creates an ics file with a Calendar object
     """
-    with open('syllabus.ics', 'w') as file:
+    with open('syllabus.ics', 'w', encoding='utf-8') as file:
         file.writelines(calendar.serialize_iter())
 
 
